@@ -3,7 +3,7 @@ require_relative 'tsp'
 
 class TSPTest < Minitest::Test
   # https://www.geeksforgeeks.org/dsa/travelling-salesman-problem-using-hungarian-method/
-  def test_optimal_tour_length_classic_4_cities
+  def test_optimal_tour_length_4_destinations
     TravelTime = [
       [ 0, 10, 15, 20],
       [10,  0, 35, 25],
