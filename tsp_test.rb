@@ -2,6 +2,7 @@ require 'minitest/autorun'
 require_relative 'tsp'
 
 class TSPTest < Minitest::Test
+  # https://www.geeksforgeeks.org/dsa/travelling-salesman-problem-using-hungarian-method/
   def test_optimal_tour_length_classic_4_cities
     distances = [
       [ 0, 10, 15, 20],
