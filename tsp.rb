@@ -1,18 +1,16 @@
 class TSP
 
-  def self.solve(distances, cities)
-    new(distances, cities).solve
+  def self.solve(distances)
+    new(distances).solve
 
   end
 
   private
 
-  attr_accessor :distances,
-                :cities
+  attr_accessor :distances
 
-  def initialize(distances, cities)
+  def initialize(distances)
     self.distances = distances
-    self.cities = cities
   end
 
   public
