@@ -14,10 +14,10 @@ Imagine you’ve landed with just one precious day and a handful of free hours b
 
 ```
 TravelTime = [
-  [0, 12, 21, 10, 22],  # My Hotel
-  [12, 0, 18, 8, 20],   # London Eye
-  [21, 18, 0, 22, 25],  # Tower of London
-  [10, 8, 22, 0, 18],   # Westminster Abbey
-  [22, 20, 25, 18, 0]   # British Museum
+  [ 0, 12, 21, 10, 22],  # My Hotel
+  [12,  0, 18,  8, 20],  # London Eye
+  [21, 18,  0, 22, 25],  # Tower of London
+  [10,  8, 22,  0, 18],  # Westminster Abbey
+  [22, 20, 25, 18,  0]   # British Museum
 ]
 ```
