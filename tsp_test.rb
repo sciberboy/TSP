@@ -11,7 +11,7 @@ class TSPTest < Minitest::Test
     ]
 
     tsp = TSP.new(distances)
-    assert_equal 80, tsp.optimal_tour_length
+    assert_equal 80, tsp.solve
   end
-  
+
 end
