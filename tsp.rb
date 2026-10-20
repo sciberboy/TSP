@@ -1,3 +1,4 @@
+# Traveling Salesman Puzzle
 class TSP
 
   def self.solve(distances)
