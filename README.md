@@ -14,7 +14,7 @@ Imagine you’ve landed with just one precious day and a handful of free hours b
 
 ```
 TraveTime = [
-  [ 0, 10, 15, 20],  # My Hotel
+  [ 0, 10, 15, 20], # My Hotel
   [10,  0, 35, 25], # London Eye
   [15, 35,  0, 30], # Tower of London
   [20, 25, 30,  0]  # British Museum
