@@ -13,7 +13,7 @@ Imagine a salesperson who needs to visit a set of cities:
 Imagine you’ve landed with just one precious day and a handful of free hours between the must-sees. The Tube is efficient, but the double-decker bus offers a slower, more scenic glide past the city’s landmarks—perfect for a Travelling Salesman-style puzzle where “cities” are famous sights and “cost” is bus travel time in minutes (approximate averages that include a short wait; actual times vary with traffic).
 
 ```
-TraveTime = [
+TravelTime = [
   [ 0, 10, 15, 20], # My Hotel
   [10,  0, 35, 25], # London Eye
   [15, 35,  0, 30], # Tower of London
