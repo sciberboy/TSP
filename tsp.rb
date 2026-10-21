@@ -15,7 +15,6 @@ class TSP
 
   public
 
-  def solve
-  end
+  def solve; end
 
 end
