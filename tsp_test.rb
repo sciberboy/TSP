@@ -11,7 +11,7 @@ class TSPTest < Minitest::Test
       [20, 25, 30,  0]
     ]
 
-    tsp = TSP.new(TravelTime)
+    tsp = TSP.new(travel_time)
     assert_equal 80, tsp.solve
   end
 
