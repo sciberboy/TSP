@@ -1,6 +1,10 @@
 # Traveling Salesman Puzzle
 class TSP
 
+  START = 0
+
+  private_constant :START
+
   def self.solve(travel_times)
     new(travel_times).solve
   end
