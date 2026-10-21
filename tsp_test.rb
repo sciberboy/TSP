@@ -1,8 +1,8 @@
 require 'minitest/autorun'
 require_relative 'tsp'
-
+# Traveling Salesman Problem (TSP)
 class TSPTest < Minitest::Test
-  # https://www.geeksforgeeks.org/dsa/travelling-salesman-problem-using-hungarian-method/
+
   def test_optimal_tour_length_4_destinations
     travel_time = [
       [ 0, 10, 15, 20],
