@@ -2,12 +2,12 @@
 START = 0
 
 def solve(travel_times, path = [START])
-  number_of_stops = travel_times.size
   travel_time = ->(stops) { stops.each_cons(2).sum { |a, b| travel_times[a][b] } }
+  number_of_stops = travel_times.size
 
   if path.size == number_of_stops
-    total_time = travel_time.call(path + [START])
-    puts (path + [START]).join('-') + " Times:#{total_time}"
+    time = travel_time.call(path + [START])
+    puts (path + [START]).join('-') + " Times:#{time}"
   else
     stops = (1...number_of_stops).to_a - path
     stops.each do |next_stop|
