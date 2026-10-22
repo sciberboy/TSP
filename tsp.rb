@@ -14,6 +14,16 @@ def solve(travel_times, path = [START])
       solve(travel_times, path + [next_stop])
     end
   end
+
+  if path.size == number_of_stops
+    time = travel_time.call(path + [START])
+    puts (path + [START]).join('-') + " Times:#{time}"
+  else
+    stops = (1...number_of_stops).to_a - path
+    stops.each do |next_stop|
+      solve(travel_times, path + [next_stop])
+    end
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
