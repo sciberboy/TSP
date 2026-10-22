@@ -1,7 +1,7 @@
 # Traveling Salesman Puzzle - Site-seeing edition
-START = 0
-
 class TSP
+  START = 0
+
   attr_accessor :travel_times
 
   def self.solve(travel_times)
@@ -48,6 +48,6 @@ if __FILE__ == $PROGRAM_NAME
   ]
 
   shortest = TSP.solve(travel_times)
-  puts "Shortest: #{shortest[:path].join('-')} Time: #{shortest[:time]} minutes"
+  puts "Shortest: #{shortest[:path].join('-')} Time:ku #{shortest[:time]} minutes"
 
 end
