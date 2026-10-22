@@ -48,6 +48,6 @@ if __FILE__ == $PROGRAM_NAME
   ]
 
   shortest = TSP.solve(travel_times)
-  puts "Shortest: #{shortest[:path].join('-')} Time:ku #{shortest[:time]} minutes"
+  puts "Shortest: #{shortest[:path].join('-')} Time: #{shortest[:time]} minutes"
 
 end
