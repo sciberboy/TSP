@@ -9,8 +9,8 @@ def solve(travel_times, path = [START])
     time = travel_time.call(path + [START])
     puts (path + [START]).join('-') + " Times:#{time}"
   else
-    stops = (1...number_of_stops).to_a - path
-    stops.each do |next_stop|
+    remaining = (1...number_of_stops).to_a - path
+    remaining.each do |next_stop|
       solve(travel_times, path + [next_stop])
     end
   end
