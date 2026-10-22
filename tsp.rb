@@ -1,37 +1,29 @@
-# Traveling Salesman Puzzle
-class TSP
+# Traveling Salesman Puzzle - Site-seeing edition
+START = 0
 
-  START = 0
+def solve(travel_times, path = [START])
+  number_of_stops = travel_times.size
+  travel_time = ->(stops) { stops.each_cons(2).sum { |a, b| travel_times[a][b] } }
 
-  private_constant :START
-
-  def self.solve(travel_times)
-    new(travel_times).solve
+  if path.size == number_of_stops
+    total_time = travel_time.call(path + [START])
+    puts (path + [START]).join('-') + " Times:#{total_time}"
+  else
+    stops = (1...number_of_stops).to_a - path
+    stops.each do |next_stop|
+      solve(travel_times, path + [next_stop])
+    end
   end
-
-  private
-
-  attr_accessor :travel_times
-
-  def initialize(travel_times)
-    self.travel_times = travel_times
-  end
-
-  public
-
-  def solve
-    p travel_times
-  end
-
 end
 
 if __FILE__ == $PROGRAM_NAME
   travel_times = [
-    [0, 10, 15, 20],
-    [10, 0, 35, 25],
-    [15, 35, 0, 30],
-    [20, 25, 30, 0]
+    [ 0, 10, 15, 20],
+    [10,  0, 35, 25],
+    [15, 35,  0, 30],
+    [20, 25, 30,  0]
   ]
-  puts 'Solution:'
-  puts TSP.solve(travel_times)
+
+  solve(travel_times)
+
 end
